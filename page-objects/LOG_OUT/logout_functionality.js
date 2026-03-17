@@ -6,8 +6,10 @@ class LogOutFunctionality {
         this.page = page;
         this.loc = LogOutLocators(page);
     }
+
     async logout() {
         await this.loc.profileDropdown.click();
+        await this.loc.logoutBtn.click();
     };
 };
 module.exports = { LogOutFunctionality };

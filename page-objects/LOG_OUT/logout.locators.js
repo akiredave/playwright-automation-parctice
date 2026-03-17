@@ -1,7 +1,13 @@
 const { log } = require("node:console");
 
 const LogOutLocators = (page)=> ({
-    profileDropdown: page.getByRole('button').filter({ hasText: /^$/ })
+    logoutBtn: page.getByText('Log Out'),
+
+    // CSS Selectors:
+    profileDropdown: page.locator('.profile-button')
+
+    // Xpaths:
+
 });
 
 module.exports = { LogOutLocators };

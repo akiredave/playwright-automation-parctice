@@ -10,6 +10,10 @@ class NavbarFunctionality {
     async click_home_dropdown(){
         await this.loc.homeBtn.click()
     }
+
+    async click_channel_info_tech_btn(){
+        await this.loc.channelinfotechBtn.click()
+    }
 }
 
 module.exports = { NavbarFunctionality };

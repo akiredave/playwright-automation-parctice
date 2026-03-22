@@ -1,7 +1,7 @@
 const {test} = require('@playwright/test');
-const { LoginFunctionality } = require('../page-objects/LOG_IN/login_functionality.js');
-const { LogOutFunctionality } = require('../page-objects/LOG_OUT/logout_functionality.js');
-const { users } = require('../test_data/login.data.js');
+const { LoginFunctionality } = require('../../page-objects/LOG_IN/login_functionality.js');
+const { LogOutFunctionality } = require('../../page-objects/LOG_OUT/logout_functionality.js');
+const { users } = require('../../test_data/login.data.js');
 const { log } = require('node:console');
 
 test('Verify user can logout', async ({page}) =>
